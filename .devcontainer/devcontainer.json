@@ -29,7 +29,9 @@
                 "github.copilot-chat"
 			]
 		}
-	}
+	},
+	"forwardPorts": [8000]
+
 
 	// Configure tool-specific properties.
 	// "customizations": {},
