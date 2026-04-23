@@ -17,7 +17,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "python -m pip install -r requirements.txt",
+	"postCreateCommand": "python -m pip install -r requirements.txt && curl -fsSL https://claude.ai/install.sh | bash",
 	"customizations": {
 		"vscode": {
 			"extensions": [
