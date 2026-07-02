@@ -68,7 +68,7 @@
                     "tool_call": true,
                     "reasoning": true
                 },
-                "deepseek-ai/deepseek-v4-pro": {
+                "deepseek-ai/DeepSeek-V4-Pro": {
                     "name": "DeepSeek V4 Pro",
                     "cost": {
                         "input": 1.74,
@@ -81,7 +81,7 @@
                     "tool_call": true,
                     "reasoning": true
                 },
-                "deepseek-ai/deepseek-v4-flash": {
+                "deepseek-ai/DeepSeek-V4-Flash": {
                     "name": "DeepSeek V4 Flash",
                     "cost": {
                         "input": 0.14,
