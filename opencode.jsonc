@@ -1,0 +1,215 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "provider": {
+        "nebius_us_central_1": {
+            "name": "Doubleword US Central 1",
+            "npm": "@ai-sdk/openai-compatible",
+            "options": {
+                "baseURL": "https://api.tokenfactory.us-central1.nebius.com/v1/",
+                "apiKey": "{env:NEBIUS_API_KEY}"
+            },
+            "models": {
+                "zai-org/GLM-5.2-FP8": {
+                    "name": "GLM-5.2-FP8",
+                    "cost": {
+                        "input": 1.40,
+                        "output": 4.40
+                    },
+                    "limit": {
+                        "context": 1048576,
+                        "output": 393216
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                }
+            }
+        },
+        "nebius_uk_south_1": {
+            "name": "Doubleword UK South 1",
+            "npm": "@ai-sdk/openai-compatible",
+            "options": {
+                "baseURL": "https://api.tokenfactory.uk-south1.nebius.com/v1/",
+                "apiKey": "{env:NEBIUS_API_KEY}"
+            },
+            "models": {
+                "deepseek-ai/DeepSeek-V4-Pro": {
+                    "name": "DeepSeek V4 Pro",
+                    "cost": {
+                        "input": 1.75,
+                        "output": 3.50
+                    },
+                    "limit": {
+                        "context": 1048576,
+                        "output": 393216
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                }
+            }
+        },
+        "doubleword": {
+            "name": "Doubleword",
+            "npm": "@ai-sdk/openai-compatible",
+            "options": {
+                "baseURL": "https://api.doubleword.ai/v1",
+                "apiKey": "{env:DOUBLEWORD_API_KEY}"
+            },
+            "models": {
+                "zai-org/GLM-5.2-FP8": {
+                    "name": "GLM-5.2-FP8",
+                    "cost": {
+                        "input": 1.40,
+                        "output": 4.40
+                    },
+                    "limit": {
+                        "context": 1048576,
+                        "output": 393216
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "deepseek-ai/deepseek-v4-pro": {
+                    "name": "DeepSeek V4 Pro",
+                    "cost": {
+                        "input": 1.74,
+                        "output": 3.48
+                    },
+                    "limit": {
+                        "context": 1048576,
+                        "output": 393216
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "deepseek-ai/deepseek-v4-flash": {
+                    "name": "DeepSeek V4 Flash",
+                    "cost": {
+                        "input": 0.14,
+                        "output": 0.28
+                    },
+                    "limit": {
+                        "context": 1048576,
+                        "output": 393216
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "Qwen/Qwen3.6-35B-A3B-FP8": {
+                    "name": "Qwen3.6 35B A3B",
+                    "cost": {
+                        "input": 0.25,
+                        "output": 2.00
+                    },
+                    "limit": {
+                        "context": 262144,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "moonshotai/Kimi-K2-6": {
+                    "name": "Kimi K2.6",
+                    "cost": {
+                        "input": 0.95,
+                        "output": 4.00
+                    },
+                    "limit": {
+                        "context": 262144,
+                        "output": 32768
+                    },
+                    "tool_call": true
+                },
+                "zai-org/GLM-5.1-FP8": {
+                    "name": "GLM 5.1",
+                    "cost": {
+                        "input": 1.40,
+                        "output": 4.40
+                    },
+                    "limit": {
+                        "context": 200000,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "google/gemma-4-31b-it": {
+                    "name": "Gemma 4 31B IT",
+                    "cost": {
+                        "input": 0.14,
+                        "output": 0.40
+                    },
+                    "limit": {
+                        "context": 131072,
+                        "output": 8192
+                    },
+                    "tool_call": true
+                },
+                "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
+                    "name": "Nemotron 3 Super 120B A12B",
+                    "cost": {
+                        "input": 0.30,
+                        "output": 0.75
+                    },
+                    "limit": {
+                        "context": 262144,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "Qwen/Qwen3.5-9B": {
+                    "name": "Qwen3.5 9B",
+                    "cost": {
+                        "input": 0.08,
+                        "output": 0.70
+                    },
+                    "limit": {
+                        "context": 262144,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "Qwen/Qwen3.5-35B-A3B-FP8": {
+                    "name": "Qwen3.5 35B A3B",
+                    "cost": {
+                        "input": 0.25,
+                        "output": 2.00
+                    },
+                    "limit": {
+                        "context": 262144,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "Qwen/Qwen3.5-397B-A17B": {
+                    "name": "Qwen3.5 397B A17B",
+                    "cost": {
+                        "input": 0.60,
+                        "output": 3.60
+                    },
+                    "limit": {
+                        "context": 262144,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                },
+                "openai/gpt-oss-20b": {
+                    "name": "GPT-OSS 20B",
+                    "cost": {
+                        "input": 0.04,
+                        "output": 0.30
+                    },
+                    "limit": {
+                        "context": 131072,
+                        "output": 32768
+                    },
+                    "tool_call": true,
+                    "reasoning": true
+                }
+            }
+        }
+    }
+}
