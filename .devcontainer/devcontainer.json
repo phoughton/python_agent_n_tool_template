@@ -49,7 +49,7 @@
 	"mounts": [
   		"source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind",
   		"source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,readonly",
-		"source=aoe-state,target=/home/vscode/.config/agent-of-empires,type=volume"
+		"source=aoe-state-${devcontainerId},target=/home/vscode/.config/agent-of-empires,type=volume"
 	],
 
 	// Configure tool-specific properties.
